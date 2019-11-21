@@ -55,11 +55,14 @@ tension_standard = 0.9;
 max_h_vel = 300000;
 
 //distances
-max_dist = 1;
+max_len = 300;
+min_len = 1;
+
+
 max_pull_delay = 180;
 max_pull_delay_t = 0;
 
-max_len = 300;
+
 
 //Arm Drawing
 arm_thicc = 20;  

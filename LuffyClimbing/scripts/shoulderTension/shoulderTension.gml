@@ -34,7 +34,6 @@ if(h.gripping){
 		
 		var damp_mag = dot_product(cos(dir), -sin(dir), xvel, yvel) ;
 		damp_mag *= (point_distance(h.x, h.y, h.sx, h.sy) > max_len && damp_mag < 0) ? .2 : (1-damp);
-		damp_mag *= (point_distance(h.x, h.y, h.sx, h.sy) < max_dist && damp_mag < 0) ? -.2 : 1;
 		xvel -= cos(dir) * damp_mag;
 		yvel -= -sin(dir) * damp_mag;
 		dir = point_direction(h.sx, h.sy, h.x, h.y);

@@ -42,7 +42,7 @@ if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned){
 		//toggle effect
 		//out_of_bounds = true;
 		
-	}else if(point_distance(x, y, sx, sy) > player.max_dist){
+	}else if(point_distance(x, y, sx, sy) > player.min_len){
 		//relaxed movement
 		var dir = point_direction(x, y, sx, sy);
 		dir = degtorad(dir);
