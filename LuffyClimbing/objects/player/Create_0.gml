@@ -52,7 +52,7 @@ hand_damp = 0.99;
 tension = 0.9;
 tension_far = 2;
 tension_standard = 0.9;
-max_h_vel = 300;
+max_h_vel = 300000;
 
 //distances
 max_dist = 120;
