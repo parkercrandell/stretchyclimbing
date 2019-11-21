@@ -21,7 +21,7 @@ if(h.gripping){
 		var dir = point_direction(x, y, h.x, h.y);
 		dir = degtorad(dir);
 			
-		var spd = tension*loosen*(point_distance(h.x, h.y, h.sx, h.sy)/max_dist);
+		var spd = tension*loosen*(point_distance(h.x, h.y, h.sx, h.sy));
 		
 		
 		xvel += cos(dir) * spd;

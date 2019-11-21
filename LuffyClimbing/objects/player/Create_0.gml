@@ -48,14 +48,14 @@ hop_speed_burst = 0;
 
 //springyness
 damp = 0.999;
-hand_damp = 0.99;
-tension = 0.9;
+hand_damp = 0.999;
+tension = 0.005;
 tension_far = 2;
 tension_standard = 0.9;
 max_h_vel = 300000;
 
 //distances
-max_dist = 120;
+max_dist = 1;
 max_pull_delay = 180;
 max_pull_delay_t = 0;
 
