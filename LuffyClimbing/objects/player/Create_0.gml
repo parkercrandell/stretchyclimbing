@@ -47,9 +47,9 @@ hop_speed_threshold = 13;
 hop_speed_burst = 0;
 
 //springyness
-damp = 0.999;
-hand_damp = 0.999;
-tension = 0.005;
+damp = .98//0.999;
+hand_damp = 0.96;
+tension = 0.01;
 tension_far = 2;
 tension_standard = 0.9;
 max_h_vel = 300000;

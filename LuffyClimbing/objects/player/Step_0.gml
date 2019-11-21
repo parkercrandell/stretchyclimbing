@@ -53,8 +53,9 @@ xvel = clamp(xvel, -max_spd, max_spd);
 yvel = clamp(yvel, -max_spd, max_spd);
 
 //the damp
-xvel *= dap;
-yvel *= dap;
+//xvel *= dap;
+//yvel *= dap;
+
 
 //grav
 if(not winned){

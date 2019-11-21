@@ -16,26 +16,38 @@ if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned){
 	win();
 }else{	
 	
-	//if(point_distance(x, y, sx, sy) > player.max_len and not out_of_bounds) {
-	//	//stretched out relaxed movement
-	//	var dir = point_direction(x, y, sx, sy);
-	//	dir = degtorad(dir);
+	if(point_distance(x, y, sx, sy) > player.max_len and not out_of_bounds) {
+		//stretched out relaxed movement
+		var dir = point_direction(x, y, sx, sy);
+		dir = degtorad(dir);
 		
-	//	var spd = (player.tension)*(point_distance(x, y, sx, sy)*3);
+		var spd = (player.tension)*(point_distance(x, y, sx, sy));
 		
-	//	xvel += cos(dir) * spd;
-	//	yvel += sin(dir) * -spd;
+		xvel += cos(dir) * spd;
+		yvel += sin(dir) * -spd;
 
-	//	//toggle effect
-	//	//out_of_bounds = true;
+		var damp_mag = dot_product(cos(dir), -sin(dir), xvel, yvel)*.2;
 		
-	//}else 
-	if(point_distance(x, y, sx, sy) > player.max_dist){
+		if(damp_mag < 0){
+			xvel -= cos(dir) * damp_mag;
+			yvel -= -sin(dir) * damp_mag;
+		}
+		
+		des_posx = sx - cos(dir) * player.max_len;
+		des_posy = sy + sin(dir) * player.max_len;
+		
+		x += des_posx - x;
+		y += des_posy - y;
+
+		//toggle effect
+		//out_of_bounds = true;
+		
+	}else if(point_distance(x, y, sx, sy) > player.max_dist){
 		//relaxed movement
 		var dir = point_direction(x, y, sx, sy);
 		dir = degtorad(dir);
 		
-		var spd = (player.tension)*power(point_distance(x, y, sx, sy),1.2);
+		var spd = (player.tension)*point_distance(x, y, sx, sy);//power(point_distance(x, y, sx, sy),1.2);
 		
 		xvel += cos(dir) * spd;
 		yvel += sin(dir) * -spd;
