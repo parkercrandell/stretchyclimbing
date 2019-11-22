@@ -1,8 +1,8 @@
 {
-    "id": "95b5a265-3078-45f4-8fa7-1a9e79dfcb34",
+    "id": "aa84dc76-cc59-4f02-b585-65f772168dba",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "shoulderTension",
+    "name": "hand_snapping_start",
     "IsCompatibility": false,
     "IsDnD": false
 }

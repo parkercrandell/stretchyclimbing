@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "6513b7c6-6889-4557-bad8-ecace8ace3d0",
+            "Value": {
+                "id": "228cff99-ec1a-4580-822a-ae1fdba3d188",
+                "resourcePath": "scripts\\hand_snapping_tick\\hand_snapping_tick.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6ae2a379-c2f5-4acb-a5ec-a231ebad30dc",
             "Value": {
                 "id": "3ace345a-38f1-4496-927c-1f705441239c",
@@ -282,7 +290,7 @@
             "Key": "95b5a265-3078-45f4-8fa7-1a9e79dfcb34",
             "Value": {
                 "id": "4580ba2e-b211-45a0-80b1-d1b31313bc78",
-                "resourcePath": "scripts\\shoulderTension\\shoulderTension.yy",
+                "resourcePath": "scripts\\shoulder_tension\\shoulder_tension.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -364,6 +372,14 @@
                 "id": "e5a1bce3-d0a2-44ae-b0e4-9ae79610618e",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aa84dc76-cc59-4f02-b585-65f772168dba",
+            "Value": {
+                "id": "c4f195b8-6300-42d3-985f-8ed81a059082",
+                "resourcePath": "scripts\\hand_snapping_start\\hand_snapping_start.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -529,7 +545,9 @@
         "6d3bfbe4-3175-4072-9bbe-5216f7b15697",
         "7a97801f-146a-45c6-a0ae-87e768c25eb5",
         "211b3a75-f426-44e3-a201-4cb8efc062b9",
-        "1e2a78b0-1a9c-494a-8981-ad6d6e56edc2"
+        "1e2a78b0-1a9c-494a-8981-ad6d6e56edc2",
+        "6513b7c6-6889-4557-bad8-ecace8ace3d0",
+        "aa84dc76-cc59-4f02-b585-65f772168dba"
     ],
     "tutorial": ""
 }

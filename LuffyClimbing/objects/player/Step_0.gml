@@ -12,8 +12,11 @@ if((keyboard_check_pressed(ord("E")) or keyboard_check_pressed(ord("W"))) and no
 
 if(not die){
 
-shoulderTension(h_left);
-shoulderTension(h_right);
+shoulder_tension(h_left);
+shoulder_tension(h_right);
+
+//reactivates player's hands after being stunned
+hand_snapping_tick();
 
 //hop
 if((keyboard_check_released(ord(h_left.key)) or keyboard_check_released(ord(h_right.key))) and (h_right.gripping or h_left.gripping) and vector_magnitude(xvel,yvel) > hop_speed_threshold){

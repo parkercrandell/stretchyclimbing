@@ -3,10 +3,7 @@ sy = player.y
 
 sxd = player.x + (s_xoffd*side);
 
-	
-
-
-if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned){
+if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned and not player.hand_snapped){
 	//Gripped
 	xvel = 0;
 	yvel = 0;
@@ -15,9 +12,9 @@ if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned){
 	//Grabbed Goal
 	win();
 }else{	
-	
+	//HAND MOVEMENT
 	if(point_distance(x, y, sx, sy) > player.max_len and not out_of_bounds) {
-		//stretched out relaxed movement
+		//too far movement
 		var dir = point_direction(x, y, sx, sy);
 		dir = degtorad(dir);
 		
@@ -42,8 +39,17 @@ if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned){
 		//toggle effect
 		//out_of_bounds = true;
 		
-	}else if(point_distance(x, y, sx, sy) > player.min_len){
-		//relaxed movement
+	}else if(point_distance(x, y, sx, sy) < player.min_len){
+		//too close movement
+		var dir = point_direction(x, y, sx, sy);
+		dir = degtorad(dir);
+		
+		var spd = (-player.tension)*point_distance(x, y, sx, sy)*0.1;//power(point_distance(x, y, sx, sy),1.2);
+		
+		xvel += cos(dir) * spd;
+		yvel += sin(dir) * -spd;		
+	}else{
+		//neutral movement
 		var dir = point_direction(x, y, sx, sy);
 		dir = degtorad(dir);
 		

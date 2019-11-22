@@ -15,11 +15,11 @@ spr = star;
 xvel = 0;
 yvel = 0;
 
-grav = 0;
+grav = 0.25;
 
 //shoulders
 side = 1;
-s_xoff = 80;
+s_xoff = 100;
 s_xoffd = 25;
 
 sx = player.x + (s_xoff*side);

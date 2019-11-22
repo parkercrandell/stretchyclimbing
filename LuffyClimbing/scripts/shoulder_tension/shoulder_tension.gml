@@ -8,15 +8,15 @@ if(h.gripping){
 			
 			var loosen = 1;
 			
-			xvel *= 0.985;
-			yvel *= 0.985;
+			xvel *= 0.99;
+			yvel *= 0.99;
 			
 		}else if (max_pull_delay/2 < max_pull_delay_t){
 			
 			var loosen = 1;
 			
-			xvel *= 0.99;
-			yvel *= 0.99;
+			xvel *= 0.995;
+			yvel *= 0.995;
 			
 		}else {
 			var loosen = 1;
@@ -32,6 +32,18 @@ if(h.gripping){
 		xvel += cos(dir) * spd;
 		yvel += sin(dir) * -spd;
 		
+		//Snapping TURNED OFF CURRENTLY
+		if(vector_magnitude(xvel,yvel) > snapping_threshold && point_distance(h.x, h.y, h.sx, h.sy) > max_len && false){			
+			hand_snapping_start();
+			
+			var snap_dir = point_direction(x,y, h.x, h.y);
+			snap_dir = degtorad(snap_dir);
+			var snap_spd = vector_magnitude(xvel,yvel)*snapping_factor*2;
+		}else{
+			var snap_dir = 0;
+			var snap_spd = 0;
+		}
+		
 		var damp_mag = dot_product(cos(dir), -sin(dir), xvel, yvel) ;
 		damp_mag *= (point_distance(h.x, h.y, h.sx, h.sy) > max_len && damp_mag < 0) ? .2 : (1-damp);
 		xvel -= cos(dir) * damp_mag;
@@ -45,6 +57,10 @@ if(h.gripping){
 		
 			x += (des_posx - h.sx) ;
 			y += (des_posy - h.sy) ;
+			if(hand_snapped){
+				xvel = cos(snap_dir) * snap_spd;
+				yvel = -sin(snap_dir) * snap_spd;
+			}
 		}
 		
 	}
