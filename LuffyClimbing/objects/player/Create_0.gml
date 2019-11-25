@@ -55,12 +55,12 @@ tension_standard = 0.9;
 max_h_vel = 300000;
 
 //distances
-max_len = 300;
+max_len = 350;
 min_len = 50;
 
 //snapping
 snapping_threshold = 1;
-snapping_factor = 0.9;
+snapping_factor = 1;
 snapping_max_spd = 90;
 snapping_grab_delay = 60;
 snapping_grab_delay_t = 1000;
