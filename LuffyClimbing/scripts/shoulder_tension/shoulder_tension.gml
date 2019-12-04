@@ -6,17 +6,17 @@ if(h.gripping){
 	if(point_distance(x, y, h.x, h.y) >  0){		
 		if(max_pull_delay < max_pull_delay_t){
 			
-			var loosen = 1;
+			var loosen = 0.6;
 			
-			xvel *= 0.99;
-			yvel *= 0.99;
+			xvel *= 0.95;
+			yvel *= 0.95;
 			
 		}else if (max_pull_delay/2 < max_pull_delay_t){
 			
-			var loosen = 1;
+			var loosen = 0.8;
 			
-			xvel *= 0.995;
-			yvel *= 0.995;
+			xvel *= 0.98;
+			yvel *= 0.98;
 			
 		}else {
 			var loosen = 1;
@@ -57,9 +57,10 @@ if(h.gripping){
 		damp_mag *= (point_distance(h.x, h.y, h.sx, h.sy) > max_len && damp_mag < 0) ? 0.5 : (1-damp);
 		
 		//add damp to player velocity
-		xvel -= cos(dir) * damp_mag;
-		yvel -= -sin(dir) * damp_mag;
-		
+		//xvel -= cos(dir) * damp_mag;
+		//yvel -= -sin(dir) * damp_mag;
+		xvel *= .98;
+		yvel *= .98;
 		//dir is shoulder to hand
 		dir = point_direction(h.sx, h.sy, h.x, h.y);
 		dir = degtorad(dir);
@@ -68,8 +69,8 @@ if(h.gripping){
 		//the value added is a buffer before I snap stuff back to pos
 		var buffer = 50;
 		if (point_distance(h.x, h.y, h.sx, h.sy) > max_len+buffer) {
-			des_posx = h.x - cos(dir) * max_len + buffer;
-			des_posy = h.y + sin(dir) * max_len + buffer;
+			des_posx = h.x - cos(dir) * (max_len + buffer);
+			des_posy = h.y + sin(dir) * (max_len + buffer);
 		
 			x += (des_posx - h.sx) ;
 			y += (des_posy - h.sy) ;

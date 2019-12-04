@@ -1,7 +1,21 @@
+//standard tracking
 camx = x - (view_wport[0] / 2);
 camy = y - (view_hport[0] / 2);
 
 camera_set_view_pos(view_camera[0],camx,camy);
+
+//uuuhhhh flywretch camera
+//var desx = x + xvel * 8 - (view_wport[0]/2);
+//var desy = y + yvel * 8 - (view_hport[0]/2);
+
+//var ang_to_des = point_direction(camx, camy, desx, desy);
+//var dist_to_des = point_distance(camx, camy, desx, desy);
+
+//camx += cos(degtorad(ang_to_des)) * dist_to_des; //min(cam_spd, dist_to_des);
+//camy -= sin(degtorad(ang_to_des)) * dist_to_des; //min(cam_spd, dist_to_des);
+
+
+camera_set_view_pos(view_camera[0], camx, camy);
 
 if(keyboard_check(ord("P"))){
 	room_restart();

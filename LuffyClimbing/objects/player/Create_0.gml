@@ -24,6 +24,10 @@ fall = 1;
 right = 2;
 left = 3; 
 both = 4;
+//camera
+cam_spd = 0;
+camx = 0;
+camy = 0;
 
 //player values
 xvel = 0;
@@ -31,6 +35,7 @@ yvel = 0;
 accel = 0.1;
 max_spd = 400;
 jump = 10;
+
 
 //---------------SHARED VALUES---------------//
 
@@ -55,7 +60,7 @@ tension_standard = 0.9;
 max_h_vel = 300000;
 
 //distances
-max_len = 350;
+max_len = 300;
 min_len = 50;
 
 //snapping
