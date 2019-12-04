@@ -57,10 +57,10 @@ if(h.gripping){
 		damp_mag *= (point_distance(h.x, h.y, h.sx, h.sy) > max_len && damp_mag < 0) ? 0.5 : (1-damp);
 		
 		//add damp to player velocity
-		//xvel -= cos(dir) * damp_mag;
-		//yvel -= -sin(dir) * damp_mag;
-		xvel *= .98;
-		yvel *= .98;
+		xvel -= cos(dir) * damp_mag;
+		yvel -= -sin(dir) * damp_mag;
+		//xvel *= .98;
+		//yvel *= .98;
 		//dir is shoulder to hand
 		dir = point_direction(h.sx, h.sy, h.x, h.y);
 		dir = degtorad(dir);

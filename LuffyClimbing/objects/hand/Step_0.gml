@@ -3,12 +3,14 @@ sy = player.y
 
 sxd = player.x + (s_xoffd*side);
 
-if(keyboard_check(ord(key)) and place_meeting(x,y,cliff) and not player.winned and not player.hand_snapped){
+
+
+if(key_check(right) and place_meeting(x,y,cliff) and not player.winned and not player.hand_snapped){
 	//Gripped
 	xvel = 0;
 	yvel = 0;
 	gripping = true;
-}else if(keyboard_check(ord(key)) and place_meeting(x,y,goal) and not player.winned){
+}else if(key_check(right) and place_meeting(x,y,goal) and not player.winned){
 	//Grabbed Goal
 	win();
 }else{	
