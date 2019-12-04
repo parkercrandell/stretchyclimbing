@@ -1,0 +1,1 @@
+draw_sprite(rock,sprite,x,y);

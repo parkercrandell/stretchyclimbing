@@ -15,7 +15,7 @@ spr = star;
 xvel = 0;
 yvel = 0;
 
-grav = 0.25;
+grav = 0.50;
 
 //shoulders
 side = 1;
