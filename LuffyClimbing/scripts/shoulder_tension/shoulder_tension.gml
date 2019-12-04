@@ -21,7 +21,7 @@ if(h.gripping){
 		}else {
 			var loosen = 1;
 		}
-		max_pull_delay_t += 1;
+		max_pull_delay_t += 0;
 		
 		var dir = point_direction(x, y, h.x, h.y);
 		dir = degtorad(dir);

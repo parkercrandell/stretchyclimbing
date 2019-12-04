@@ -54,13 +54,13 @@ hop_speed_burst = 0;
 //springyness
 damp = .98//0.999;
 hand_damp = 0.96;
-tension = 0.01;
+tension = 0.0065;
 tension_far = 2;
 tension_standard = 0.9;
 max_h_vel = 300000;
 
 //distances
-max_len = 300;
+max_len = 500;
 min_len = 50;
 
 //snapping

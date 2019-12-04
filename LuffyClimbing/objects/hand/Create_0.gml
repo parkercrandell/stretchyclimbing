@@ -19,7 +19,7 @@ grav = 0.50;
 
 //shoulders
 side = 1;
-s_xoff = 100;
+s_xoff = 130;
 s_xoffd = 25;
 
 sx = player.x + (s_xoff*side);
