@@ -2,6 +2,11 @@ depth = 10;
 var rocksize = sprite_get_height(fuck);
 surf = surface_create(abs(sprite_width),abs(sprite_height));
 var sprite = 0;
+fr = round(random_range(0,1));
+spr = [rock1,rock118];
+tex = rocktext1;
+mask_index = spr[fr];
+
 surface_set_target(surf);
 
 //clear surface - just in case
@@ -10,21 +15,22 @@ draw_clear_alpha(c_white, 0);
 //draw texture
 gpu_set_colorwriteenable( true, true, true, false);
     // code here
+var poop = random_range(-50,0);
 
-for(var i = 0; i < abs(sprite_width); i += sprite_get_width(sprite10)){
-	for(var j = 0; j < abs(sprite_height); j += sprite_get_height(sprite10)){
-		draw_sprite(sprite10, 1, i, j);
+for(var i = poop; i < abs(sprite_width); i += sprite_get_width(tex)){
+	for(var j = poop; j < abs(sprite_height); j += sprite_get_height(tex)){
+		draw_sprite(tex, 1, i, j);
 	}
 }
 
 //activate texture with sprite
 gpu_set_colorwriteenable( false, false, false, true );
-draw_sprite_ext(fuckoff, 0, 0, 0,image_xscale, image_yscale, 0,c_white,image_alpha);
+draw_sprite_ext(spr[fr], 0, 0, 0,image_xscale, image_yscale, 0,c_white,image_alpha);
 
 //use white pixels of sprite to burn texture
 gpu_set_colorwriteenable( true, true, true, false );
 gpu_set_blendmode(bm_subtract);
-draw_sprite_ext(fuckoff, 0, 0, 0,image_xscale, image_yscale, 0,c_white,image_alpha);
+draw_sprite_ext(spr[fr], 0, 0, 0,image_xscale, image_yscale, 0,c_white,image_alpha);
 
 //wrap up 
 gpu_set_blendmode(bm_normal);

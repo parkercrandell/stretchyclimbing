@@ -26,3 +26,6 @@ sx = player.x + (s_xoff*side);
 sy = player.y
 sxd = player.x + (s_xoffd*side);
 
+max_pull_delay = 180;
+max_pull_delay_t = 0;
+

@@ -5,7 +5,7 @@ sxd = player.x + (s_xoffd*side);
 
 
 
-if(key_check(right) and place_meeting(x,y,cliff) and not player.winned and not player.hand_snapped){
+if(key_check(right) and place_meeting(x,y,cliff) and not player.winned){
 	//Gripped
 	xvel = 0;
 	yvel = 0;

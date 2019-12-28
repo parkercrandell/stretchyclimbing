@@ -1,3 +1,5 @@
+window_set_fullscreen(false);
+
 buffr = 30
 
 playerstart = 10;

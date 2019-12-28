@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "027fd30a-ed24-4357-a93f-f2ff4cbdabe9",
+            "Value": {
+                "id": "25ee69ff-dfc5-46c5-abe7-115691de7694",
+                "resourcePath": "sprites\\fuckofftoplay\\fuckofftoplay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "073626c6-81a0-4933-ad05-ef0be82c7209",
             "Value": {
                 "id": "4c1fcabb-006a-4845-9911-cbe0d26ee7f8",
                 "resourcePath": "scripts\\win\\win.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0ca5903e-15d5-41ea-bb6c-04d381a9125d",
+            "Value": {
+                "id": "9d3e1447-ee24-4678-a5bb-2e07bc159487",
+                "resourcePath": "datafiles_yy\\Unity 2019.2.2f1 (64-bit).lnk.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -71,6 +87,14 @@
             }
         },
         {
+            "Key": "1527a192-bbfd-46ab-8e5e-ab19436554f5",
+            "Value": {
+                "id": "1d4399ef-36bf-41be-873c-30caecab256d",
+                "resourcePath": "sprites\\rock1\\rock1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e2a78b0-1a9c-494a-8981-ad6d6e56edc2",
             "Value": {
                 "id": "8f666672-d322-40c6-87b9-1959929e164d",
@@ -83,6 +107,14 @@
             "Value": {
                 "id": "ed8850a2-a698-42d8-9fdb-291530309da7",
                 "resourcePath": "sprites\\back\\back.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "20e4c659-d529-4954-b393-afc311c78ee5",
+            "Value": {
+                "id": "6e2aef0a-7a7d-4c9d-9d6b-53ada16f06b7",
+                "resourcePath": "sprites\\handr\\handr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -122,7 +154,7 @@
             "Key": "378695e5-aa48-49eb-af55-467fc0a41afd",
             "Value": {
                 "id": "f2fef63f-7338-4778-a846-827f671fbab3",
-                "resourcePath": "sprites\\handr\\handr.yy",
+                "resourcePath": "sprites\\dsf\\dsf.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -132,6 +164,14 @@
                 "id": "1a44bb87-3cc6-42d2-b938-5ea23658cbab",
                 "resourcePath": "scripts\\roomgen\\roomgen.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3d08d4f4-02a4-4163-9e99-b9561965c4e9",
+            "Value": {
+                "id": "2a3473a9-90f9-41d8-b936-dc557a363a6a",
+                "resourcePath": "sprites\\sunset\\sunset.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -163,14 +203,6 @@
             "Value": {
                 "id": "ac8aa98e-c472-4fca-ab00-0c9f824beabf",
                 "resourcePath": "sprites\\sprite1\\sprite1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4a40d55b-29c1-4401-84c8-28a036adacab",
-            "Value": {
-                "id": "832ac731-92a9-49d7-91e2-ae25b4f3eefc",
-                "resourcePath": "sprites\\head\\head.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -223,10 +255,26 @@
             }
         },
         {
+            "Key": "685597bc-129d-4f25-a840-144f3cdada77",
+            "Value": {
+                "id": "76604593-654b-4028-ba7f-8364a76addf7",
+                "resourcePath": "sprites\\rock118\\rock118.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6ae2a379-c2f5-4acb-a5ec-a231ebad30dc",
             "Value": {
                 "id": "3ace345a-38f1-4496-927c-1f705441239c",
                 "resourcePath": "sprites\\rock\\rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6bb7710b-c5a8-44ec-a72c-2b6c44a439a6",
+            "Value": {
+                "id": "acabd751-8f94-4a19-bc32-96fcb0d3cf9a",
+                "resourcePath": "sprites\\handl\\handl.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -327,6 +375,14 @@
             }
         },
         {
+            "Key": "99b20402-8fbc-420c-a389-ce4f17e5541e",
+            "Value": {
+                "id": "5a9f8ecb-0eb8-4795-adcb-8ceccb16e09f",
+                "resourcePath": "sprites\\fuckofftoplay23\\fuckofftoplay23.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9d50edfc-efbd-4232-a9cf-4052bbd66ed2",
             "Value": {
                 "id": "a3c3a695-129c-4e8d-af42-56bc61808286",
@@ -399,14 +455,6 @@
             }
         },
         {
-            "Key": "aa17f9b0-bdfe-4827-9720-111cb8fa14d2",
-            "Value": {
-                "id": "ac8193ef-02c5-41b0-b8f1-b2deca85f425",
-                "resourcePath": "objects\\ohboy\\ohboy.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "aa84dc76-cc59-4f02-b585-65f772168dba",
             "Value": {
                 "id": "c4f195b8-6300-42d3-985f-8ed81a059082",
@@ -466,7 +514,7 @@
             "Key": "cb9b3982-3361-42f3-ad85-0105f1b80d20",
             "Value": {
                 "id": "0f41b4c4-f753-44af-a5a6-691d09b5669f",
-                "resourcePath": "sprites\\handl\\handl.yy",
+                "resourcePath": "sprites\\handl1\\handl1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -476,6 +524,22 @@
                 "id": "55ecd7f8-36d8-469c-b227-270053df5cac",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d364aaa8-8d91-4e59-8d3f-945cc04023f3",
+            "Value": {
+                "id": "316941bd-14b3-437d-b4fd-e2ec95077912",
+                "resourcePath": "sprites\\sprite17\\sprite17.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d36d4d91-b69e-46be-8d39-271025bbca3a",
+            "Value": {
+                "id": "d3d70fe2-7ff8-4a75-8d0f-6205426cfaea",
+                "resourcePath": "sprites\\sunset24\\sunset24.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -519,10 +583,42 @@
             }
         },
         {
+            "Key": "e844e4e1-0648-4e65-9c4e-009fe848ccb6",
+            "Value": {
+                "id": "34e4cae2-ecfd-4d9d-9420-2bcc8b858ef1",
+                "resourcePath": "sprites\\sprite14\\sprite14.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e9ac58ec-0c13-4639-9121-36ede5d9ca5b",
+            "Value": {
+                "id": "9ce3a450-c690-4d15-bd5a-e193edeb9314",
+                "resourcePath": "sprites\\head\\head.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ead2344c-1a78-41ba-8517-acf8c366ce28",
+            "Value": {
+                "id": "d2850430-0d8c-4fb5-be58-ebf8164047e6",
+                "resourcePath": "sprites\\gamebackgrounds\\gamebackgrounds.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f2ada7f0-84e9-4a5b-ac16-544134164d09",
             "Value": {
                 "id": "2702f490-ed92-40bd-b15b-6b5193056086",
                 "resourcePath": "sprites\\g_spr\\g_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f3968a7f-7186-462a-a074-5d12c9bfd679",
+            "Value": {
+                "id": "cd6c674c-66c4-4aa8-9fcc-c1ad5f361b13",
+                "resourcePath": "sprites\\rocktext1\\rocktext1.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -21,9 +21,10 @@ with (h_right){
 state = 0;
 neutral = 0;
 fall = 1;
-right = 2;
-left = 3; 
+gright = 2;
+gleft = 3; 
 both = 4;
+
 //camera
 cam_spd = 0;
 camx = 0;
@@ -36,11 +37,11 @@ accel = 0.1;
 max_spd = 400;
 jump = 10;
 
-
+start = false;
 //---------------SHARED VALUES---------------//
 
 //draw
-size = 0.7;
+size = 0.6;
 
 
 //keeping the player still when they hold with both hands
@@ -52,15 +53,14 @@ hop_speed_threshold = 13;
 hop_speed_burst = 0;
 
 //springyness
-damp = .98//0.999;
-hand_damp = 0.96;
-tension = 0.0065;
-tension_far = 2;
-tension_standard = 0.9;
+damp = 0.98//0.999;
+quad_damp = 0.0000002;//0.0000000002;
+hand_damp = 0.99;
+tension = 0.007;
 max_h_vel = 300000;
 
 //distances
-max_len = 500;
+max_len = 350;
 min_len = 50;
 
 //snapping
@@ -72,14 +72,11 @@ snapping_grab_delay_t = 1000;
 hand_snapped = true;
 
 
-max_pull_delay = 180;
-max_pull_delay_t = 0;
-
 
 
 //Arm Drawing
 arm_thicc = 20;  
-armr = 10 * size;
+armr = 15 * size;
 
 //gravity
 grav = 0.55;
